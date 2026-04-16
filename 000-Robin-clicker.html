@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robin Clicker</title>
+  <link rel="stylesheet" href="000-Robin-clicker.css">
+</head>
+<body>
+  <audio id="fahSound" src=".vscode\FAH.mp3" preload="auto"></audio>
+  
+  <div class="game">
+    <h1>Robin Clicker</h1>
+
+    <div class="stats">
+      <p>Coins: <span id="coins">0</span></p>
+      <p>Damage: <span id="damage">1</span></p>
+      <p>Robin HP: <span id="hp">20</span> / <span id="maxHp">20</span></p>
+    </div>
+
+    <div class="hp-bar-container">
+      <div id="hpBar" class="hp-bar"></div>
+    </div>
+
+    <div class="center">
+      <img id="robin" class="robinImg" src=".vscode/Screenshot 2026-04-16 174732.png" alt="Robin">
+    </div>
+
+    <p id="message">Click the robin!</p>
+
+    <div class="shop">
+      <h2>Weapon Shop</h2>
+
+      <button class="shopBtn" id="stickBtn">
+        Buy Stick (+1 damage) - 10 coins
+      </button>
+
+      <button class="shopBtn" id="swordBtn">
+        Buy Sword (+5 damage) - 50 coins
+      </button>
+
+      <button class="shopBtn" id="laserBtn">
+        Buy Laser (+20 damage) - 200 coins
+      </button>
+    </div>
+  </div>
+
+  <script src="000-Robin-clicker.js"></script>
+</body>
+</html>
+
