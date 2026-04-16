@@ -36,8 +36,19 @@ function updateUI() {
 }
 
 function playFahFah() {
+  if (!fahSound) {
+    console.log("No audio element found");
+    return;
+  }
+
+  fahSound.pause();
   fahSound.currentTime = 0;
-  fahSound.play();
+
+  fahSound.play().then(() => {
+    console.log("sound played");
+  }).catch((error) => {
+    console.log("play error:", error);
+  });
 }
 
 function createFloatingText(x, y, text) {
